@@ -5,6 +5,7 @@
 	function CopyKeyboard(e: Event) {
 		const text = e.currentTarget!.children[0].textContent;
 		navigator.clipboard.writeText(text);
+		alert('Copied to clipboard');
 	}
 
 	export let data;
